@@ -9,7 +9,6 @@
 // Author        : Prafull Bokade
 //
 /////////////////////////////////////////////////////////////////////////////////////////
-// (Application should not be case insensitive) 
 // Input   : "Hello Prafull"
 // Output  :  10
 // Input   : "Small charactorS"
