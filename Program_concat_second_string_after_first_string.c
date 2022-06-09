@@ -3,7 +3,7 @@
 // and concat second string after first string. 
 // Input :Hello Sir 
 //        How are you.
-// Output:Hello Prafull How are you
+// Output:Hello Sir How are you
 //////////////////////////////////////////////// 
 
 
