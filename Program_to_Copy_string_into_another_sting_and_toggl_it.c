@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////
+// Write a program which accept string from user and
+// copy that character of string into another string
+// by concverting toggling the case 
+// Input  : Hello Maam 
+// Output : hELLO mAAM     in another string
+/////////////////////////////////////////////////////////
+
+#include<stdio.h> 
+void StrCpyToggleX(char *src, char *dest) 
+{ 
+	if((src == NULL) || (dest == NULL))
+	{
+		return;
+	}
+
+	while(*src != '\0') 
+	{ 
+        if((*src >= 'a')&&(*src <= 'z'))
+		{
+			*src = *src - 32;
+		}
+		else if((*src >= 'A')&&(*src <= 'Z'))
+		{
+			*src = *src + 32;
+		}
+		*dest = *src; 
+		src++; 
+		dest++; 
+	} 
+	*dest = '\0'; 
+} 
+int main() 
+{ 
+	char arr[30];  
+	char brr[30]; 
+
+	printf("Enter a string :\n");
+	scanf("%[^'\n']s",arr);
+
+	StrCpyToggleX(arr,brr); 
+	printf("Copy string : %s",brr); 
+
+	return 0;
+
+}
